@@ -19,12 +19,12 @@
         </div>
       </div>
       <nav class="nav-mini">
-        <a href="Website.html">Home</a>
-        <a href="ChatBot.html">ChatBot</a>
-        <a href="GitHub.html">GitHub</a>
-        <a href="resume.html">Resume</a>
-        <a class="active" href="QrCode.html">QrCode</a>
-        <a href="CompleteProject.html">Complete Project</a>
+        <a href="https://aldrinf2024-a11y.github.io/portfolio/">Home</a>
+        <a href="https://aldrinf2024-a11y.github.io/portfolio/ChatBot.html">ChatBot</a>
+        <a href="https://aldrinf2024-a11y.github.io/portfolio/GitHub.html">GitHub</a>
+        <a href="https://aldrinf2024-a11y.github.io/portfolio/resume.html">Resume</a>
+        <a class="active" href="https://aldrinf2024-a11y.github.io/portfolio/QrCode.html">QrCode</a>
+        <a href="https://aldrinf2024-a11y.github.io/portfolio/CompleteProject.html">Complete Project</a>
       </nav>
     </div>
   </header>
@@ -38,15 +38,15 @@
             <p class="muted">Scan this QR code to open the website quickly on a phone or another device.</p>
           </div>
           <div class="doc-actions">
-            <a class="btn" href="Website.html">Open Website</a>
-            <a class="btn" href="resume.html">Open Resume</a>
+            <a class="btn" href="https://aldrinf2024-a11y.github.io/portfolio/">Open Website</a>
+            <a class="btn" href="https://aldrinf2024-a11y.github.io/portfolio/resume.html">Open Resume</a>
           </div>
         </div>
 
         <div class="qrcode">
           <img id="qrImage" alt="Portfolio QR code" />
         </div>
-        <p>Current website URL: <a data-portfolio-url href="Website.html"></a></p>
+        <p>Current website URL: <a data-portfolio-url href="https://aldrinf2024-a11y.github.io/portfolio/"></a></p>
       </div>
     </div>
   </main>
@@ -58,7 +58,8 @@
   </footer>
 
   <script>
-    function getPortfolioUrl(){ return new URL('Website.html', window.location.href).href; }
+    const SITE_URL='https://aldrinf2024-a11y.github.io/portfolio/';
+    function getPortfolioUrl(){ return SITE_URL; }
     document.addEventListener('DOMContentLoaded',()=>{
       const y=document.getElementById('year'); if(y) y.textContent=String(new Date().getFullYear());
       const url=getPortfolioUrl();

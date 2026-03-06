@@ -19,12 +19,12 @@
         </div>
       </div>
       <nav class="nav-mini">
-        <a href="Website.html">Home</a>
-        <a href="ChatBot.html">ChatBot</a>
-        <a class="active" href="GitHub.html">GitHub</a>
-        <a href="resume.html">Resume</a>
-        <a href="QrCode.html">QrCode</a>
-        <a href="CompleteProject.html">Complete Project</a>
+        <a href="https://aldrinf2024-a11y.github.io/portfolio/">Home</a>
+        <a href="https://aldrinf2024-a11y.github.io/portfolio/ChatBot.html">ChatBot</a>
+        <a class="active" href="https://aldrinf2024-a11y.github.io/portfolio/GitHub.html">GitHub</a>
+        <a href="https://aldrinf2024-a11y.github.io/portfolio/resume.html">Resume</a>
+        <a href="https://aldrinf2024-a11y.github.io/portfolio/QrCode.html">QrCode</a>
+        <a href="https://aldrinf2024-a11y.github.io/portfolio/CompleteProject.html">Complete Project</a>
       </nav>
     </div>
   </header>
@@ -74,7 +74,8 @@
 
   <script>
     const GITHUB_URL='https://github.com/aldrinf2024-a11y/portfolio';
-    function getPortfolioUrl(){ return new URL('Website.html', window.location.href).href; }
+    const SITE_URL='https://aldrinf2024-a11y.github.io/portfolio/';
+    function getPortfolioUrl(){ return SITE_URL; }
     document.addEventListener('DOMContentLoaded',()=>{
       const y=document.getElementById('year'); if(y) y.textContent=String(new Date().getFullYear());
       document.querySelectorAll('[data-github-url]').forEach((el)=>{ el.href=GITHUB_URL; if(!el.textContent.trim()) el.textContent=GITHUB_URL; });
