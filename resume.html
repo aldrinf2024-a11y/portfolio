@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Resume — Aldrin Fomukong</title>
+  <style>
+    :root{--bg:#f8fbff;--panel:#ffffff;--text:#0f172a;--muted:#64748b;--accent:#2563eb;--border:#dbe5f4;--shadow:0 12px 28px rgba(15,23,42,.08);--radius:18px;--max:980px}*{box-sizing:border-box}html,body{margin:0;padding:0}body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;background:radial-gradient(900px 500px at 10% 0%,rgba(37,99,235,.08),transparent 60%),var(--bg);color:var(--text);line-height:1.6}a{text-decoration:none;color:inherit}.container{max-width:var(--max);margin:0 auto;padding:0 20px}.site-header{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.92);backdrop-filter:blur(10px);border-bottom:1px solid var(--border)}.site-header .container{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:14px 20px;flex-wrap:wrap}.brand{display:flex;gap:14px;align-items:center}.logo{width:44px;height:44px;border-radius:14px;background:linear-gradient(135deg,#93c5fd,#c4b5fd);display:grid;place-items:center;font-weight:800}.tagline{margin:.15rem 0 0;color:var(--muted);font-size:.95rem}.nav-mini{display:flex;gap:10px;flex-wrap:wrap}.nav-mini a,.btn,.doc-pill{display:inline-flex;align-items:center;justify-content:center;padding:10px 14px;border-radius:12px;border:1px solid var(--border);background:#fff;font-weight:700}.nav-mini a.active,.btn{background:rgba(37,99,235,.10)}.section{padding:48px 0}.card{background:var(--panel);border:1px solid var(--border);border-radius:var(--radius);padding:22px;box-shadow:var(--shadow)}.doc-header,.doc-actions,.doc-meta,.inline-contact{display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap;align-items:flex-start}.doc-meta{justify-content:flex-start;margin:14px 0}.doc-pill{padding:7px 10px;border-radius:999px;color:var(--accent);background:rgba(37,99,235,.06)}.muted{color:var(--muted)}.resume-block{margin-top:18px}.resume-block h3{padding-bottom:8px;border-bottom:1px solid var(--border)}.doc-list{margin:10px 0 0 18px;padding:0}.doc-list li{margin:8px 0}.footer{padding:22px 0;border-top:1px solid var(--border)}@media print {.site-header,.footer,.doc-actions,.nav-mini{display:none} body{background:#fff} .card{box-shadow:none;border:none;padding:0}}
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <div class="brand">
+        <div class="logo" aria-hidden="true">AF</div>
+        <div>
+          <h1>Aldrin Fomukong</h1>
+          <p class="tagline">Resume</p>
+        </div>
+      </div>
+      <nav class="nav-mini">
+        <a href="Website.html">Home</a>
+        <a href="ChatBot.html">ChatBot</a>
+        <a href="GitHub.html">GitHub</a>
+        <a class="active" href="resume.html">Resume</a>
+        <a href="QrCode.html">QrCode</a>
+        <a href="CompleteProject.html">Complete Project</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="section">
+    <div class="container">
+      <div class="card">
+        <div class="doc-header">
+          <div>
+            <h2>Aldrin Fomukong</h2>
+            <p class="muted">Computer Science Student • Front-End Developer • Problem Solver</p>
+            <div class="inline-contact muted">
+              <span>Email</span>
+              <span>Phone</span>
+              <span>LinkedIn</span>
+              <span>GitHub</span>
+            </div>
+          </div>
+          <div class="doc-actions">
+            <button class="btn" type="button" onclick="window.print()">Print / Save PDF</button>
+            <a class="btn" href="QrCode.html">View QR Code</a>
+          </div>
+        </div>
+
+        <div class="doc-meta">
+          <span class="doc-pill">HTML5</span>
+          <span class="doc-pill">CSS3</span>
+          <span class="doc-pill">JavaScript</span>
+          <span class="doc-pill">Responsive Design</span>
+          <span class="doc-pill">Git & GitHub</span>
+        </div>
+
+        <section class="resume-block">
+          <h3>Summary</h3>
+          <p>Experienced computer science student who has done work in responsive web construction using HTML, CSS, and JavaScript. I am interested in front-end development, user experience, and problem solving in real life.</p>
+        </section>
+
+        <section class="resume-block">
+          <h3>Technical Skills</h3>
+          <ul class="doc-list">
+            <li>HTML5, CSS3, and JavaScript with DOM events and interactivity</li>
+            <li>Basic documentation writing with README files and Git/GitHub workflow</li>
+            <li>Accessibility awareness and fundamentals of responsive design</li>
+          </ul>
+        </section>
+
+        <section class="resume-block">
+          <h3>Projects</h3>
+          <p><strong>Portfolio Website (HTML/CSS/JS)</strong></p>
+          <ul class="doc-list">
+            <li>Created a multi-page website with Home, About, Projects, Resume, and Contact sections.</li>
+            <li>Implemented a rule-based chatbot to answer questions about skills, projects, GitHub, and contact details.</li>
+            <li>Added a QR code that links directly to the live portfolio website for quick access.</li>
+            <li>Prepared the source code and documentation for GitHub publishing and GitHub Pages deployment.</li>
+          </ul>
+        </section>
+
+        <section class="resume-block">
+          <h3>Education</h3>
+          <p>University Name — Bachelor of Science in Computer Science, expected year of completion.</p>
+          <p class="muted">Related coursework: Web Development, Data Structures, Software Engineering.</p>
+        </section>
+
+        <section class="resume-block">
+          <h3>Achievements</h3>
+          <p>Portfolio class projects.</p>
+        </section>
+
+        <section class="resume-block">
+          <h3>References</h3>
+          <p>Available upon request.</p>
+        </section>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p class="muted">© <span id="year"></span> Aldrin Fomukong</p>
+    </div>
+  </footer>
+
+  <script>
+    const y=document.getElementById('year'); if(y) y.textContent=String(new Date().getFullYear());
+  </script>
+</body>
+</html>

@@ -1,0 +1,227 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Website — Aldrin Fomukong</title>
+  <style>
+    :root{--bg:#f8fbff;--panel:#ffffff;--panel2:#eef4ff;--text:#0f172a;--muted:#64748b;--accent:#2563eb;--border:#dbe5f4;--shadow:0 12px 28px rgba(15,23,42,.08);--radius:18px;--max:1100px}
+    *{box-sizing:border-box}html,body{margin:0;padding:0}body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;background:radial-gradient(900px 500px at 10% 0%,rgba(37,99,235,.08),transparent 60%),radial-gradient(900px 500px at 100% 0%,rgba(14,165,233,.08),transparent 55%),var(--bg);color:var(--text);line-height:1.6}a{text-decoration:none;color:inherit}.container{max-width:var(--max);margin:0 auto;padding:0 20px}.site-header{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.92);backdrop-filter:blur(10px);border-bottom:1px solid var(--border)}.site-header .container{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:14px 20px;flex-wrap:wrap}.brand{display:flex;gap:14px;align-items:center}.logo{width:44px;height:44px;border-radius:14px;background:linear-gradient(135deg,#93c5fd,#c4b5fd);display:grid;place-items:center;font-weight:800}.tagline{margin:.15rem 0 0;color:var(--muted);font-size:.95rem}.nav-mini{display:flex;gap:10px;flex-wrap:wrap}.nav-mini a,.btn{display:inline-flex;align-items:center;justify-content:center;padding:10px 14px;border-radius:12px;border:1px solid var(--border);background:#fff;font-weight:700}.nav-mini a.active,.btn{background:rgba(37,99,235,.10)}.btn-outline{background:#fff;color:var(--muted)}.section{padding:48px 0}.grid-2{display:grid;grid-template-columns:1.1fr .9fr;gap:18px;align-items:start}.card{background:var(--panel);border:1px solid var(--border);border-radius:var(--radius);padding:22px;box-shadow:var(--shadow)}.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.muted{color:var(--muted)}.small{font-size:.92rem}.accent{color:var(--accent)}.cta,.doc-actions,.resume-actions,.chat-input,.quick{display:flex;gap:10px;flex-wrap:wrap}.qrcode{display:grid;place-items:center;min-height:220px}.qrcode img{width:220px;height:220px;border-radius:16px;border:1px solid var(--border);background:#fff;padding:10px}.chips{display:flex;gap:10px;flex-wrap:wrap;padding-left:0;list-style:none}.chips li,.chip,.doc-pill{padding:7px 10px;border:1px solid var(--border);border-radius:999px;background:rgba(37,99,235,.06);color:var(--accent);font-weight:700}.link{color:var(--accent);font-weight:700}.form label{display:block;margin-bottom:12px;font-weight:650}input,textarea{width:100%;margin-top:6px;padding:10px 12px;border-radius:12px;border:1px solid var(--border);background:#f8fbff;color:var(--text)}.chat-window{height:230px;overflow:auto;border:1px solid var(--border);border-radius:12px;padding:10px;background:#f8fbff}.msg{margin:8px 0;display:flex}.msg .bubble{max-width:90%;padding:8px 10px;border-radius:14px;border:1px solid var(--border)}.msg.user{justify-content:flex-end}.msg.user .bubble{background:rgba(37,99,235,.10)}.msg.bot .bubble{background:#fff}.doc-header{display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap;align-items:flex-start}.footer{padding:22px 0;border-top:1px solid var(--border)}@media (max-width:880px){.grid-2,.cards{grid-template-columns:1fr}.site-header .container{align-items:flex-start}}
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <div class="brand">
+        <div class="logo" aria-hidden="true">AF</div>
+        <div>
+          <h1>Aldrin Fomukong</h1>
+          <p class="tagline">Personal Portfolio Website</p>
+        </div>
+      </div>
+      <nav class="nav-mini">
+        <a class="active" href="Website.html">Home</a>
+        <a href="ChatBot.html">ChatBot</a>
+        <a href="GitHub.html">GitHub</a>
+        <a href="resume.html">Resume</a>
+        <a href="QrCode.html">QrCode</a>
+        <a href="CompleteProject.html">Complete Project</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="container grid-2">
+        <div class="card">
+          <h2>Hi, I’m <span class="accent">Aldrin Fomukong</span>.</h2>
+          <p>I build clean, responsive web experiences with HTML, CSS, and JavaScript. This portfolio showcases my skills, interactive chatbot, QR code access, GitHub resources, resume, and project submission pages.</p>
+          <div class="cta">
+            <a class="btn" href="#projects">View Projects</a>
+            <a class="btn btn-outline" href="#contact">Contact Me</a>
+          </div>
+        </div>
+
+        <div class="card">
+          <h3>Scan to open this website</h3>
+          <p class="muted">The QR code points to this portfolio page.</p>
+          <div class="qrcode"><img id="homeQr" alt="Portfolio QR code" /></div>
+          <p class="muted small">Portfolio URL: <a class="link" data-portfolio-url href="Website.html"></a></p>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="container">
+        <div class="card">
+          <h2>About</h2>
+          <p>I am a computer science student interested in front-end development, user experience, and building practical tools. My focus is on responsive design, semantic HTML, accessible interfaces, and JavaScript interactivity.</p>
+          <ul class="chips">
+            <li>HTML5</li>
+            <li>CSS3</li>
+            <li>JavaScript</li>
+            <li>Git & GitHub</li>
+            <li>Responsive Design</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section">
+      <div class="container">
+        <h2>Projects</h2>
+        <div class="cards">
+          <article class="card">
+            <h3>Portfolio Website</h3>
+            <p>A responsive portfolio website with contact section, project links, QR code, and interactive features.</p>
+            <a class="link" href="CompleteProject.html">Open Project Hub</a>
+          </article>
+          <article class="card">
+            <h3>ChatBot Feature</h3>
+            <p>A rule-based chatbot that answers common portfolio questions with JavaScript.</p>
+            <a class="link" href="ChatBot.html">Open ChatBot Page</a>
+          </article>
+          <article class="card">
+            <h3>GitHub Submission</h3>
+            <p>Repository information and documentation submission page for this assignment.</p>
+            <a class="link" data-github-url href="https://github.com/your-username" target="_blank" rel="noreferrer">Open GitHub Repo</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="resume" class="section">
+      <div class="container">
+        <div class="card doc-header">
+          <div>
+            <h2>Resume</h2>
+            <p class="muted">View the resume in a web-friendly format and use print to save it as PDF if needed.</p>
+          </div>
+          <div class="resume-actions">
+            <a class="btn" href="resume.html">Open Resume</a>
+            <a class="btn btn-outline" href="QrCode.html">Open QR Code</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container grid-2">
+        <div>
+          <h2>Chatbot</h2>
+          <aside class="card">
+            <p class="muted small">Ask about skills, projects, GitHub, resume, or contact information.</p>
+            <div class="chat-window" id="chatWindow" aria-live="polite"></div>
+            <div class="chat-input">
+              <input id="chatInput" type="text" placeholder="Type a question..." />
+              <button class="btn" id="sendChatBtn" type="button">Send</button>
+            </div>
+            <div class="quick">
+              <button class="chip" data-q="What skills do you have?">Skills</button>
+              <button class="chip" data-q="How can I contact you?">Contact</button>
+              <button class="chip" data-q="Show me your GitHub">GitHub</button>
+            </div>
+          </aside>
+        </div>
+
+        <div id="contact">
+          <h2>Contact</h2>
+          <form id="contactForm" class="card form">
+            <label>
+              Name
+              <input required name="name" type="text" placeholder="Your name" />
+            </label>
+            <label>
+              Email
+              <input required name="email" type="email" placeholder="you@example.com" />
+            </label>
+            <label>
+              Message
+              <textarea required name="message" rows="5" placeholder="Write your message..."></textarea>
+            </label>
+            <button class="btn" type="submit">Send</button>
+            <p id="formStatus" class="muted small" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p class="muted small">© <span id="year"></span> Aldrin Fomukong • Built with HTML, CSS, and JavaScript</p>
+    </div>
+  </footer>
+
+  <script>
+    const GITHUB_URL = "https://github.com/your-username";
+    function getPortfolioUrl(){ return new URL('Website.html', window.location.href).href; }
+    function hydrateCommon(){
+      const y = document.getElementById('year');
+      if (y) y.textContent = String(new Date().getFullYear());
+      document.querySelectorAll('[data-github-url]').forEach((el) => {
+        el.href = GITHUB_URL;
+        if (!el.textContent.trim() || el.textContent.includes('your-username')) el.textContent = GITHUB_URL;
+      });
+      document.querySelectorAll('[data-portfolio-url]').forEach((el) => {
+        const url = getPortfolioUrl();
+        el.href = url;
+        if (!el.textContent.trim() || el.textContent.endsWith('.html')) el.textContent = url;
+      });
+      const qr = document.getElementById('homeQr');
+      if (qr) qr.src = 'https://api.qrserver.com/v1/create-qr-code/?size=220x220&data=' + encodeURIComponent(getPortfolioUrl());
+    }
+    function wireContactForm(){
+      const form = document.getElementById('contactForm');
+      const status = document.getElementById('formStatus');
+      if (!form || !status) return;
+      form.addEventListener('submit', (e) => {
+        e.preventDefault();
+        status.textContent = 'Thanks! Your message has been captured in this demo form.';
+        form.reset();
+      });
+    }
+    const faq = [
+      { keys:['skills','technologies','stack'], answer:'My core skills are HTML, CSS, JavaScript, responsive design, and Git/GitHub.' },
+      { keys:['projects','work','portfolio'], answer:'My main project is this portfolio website with dedicated pages for chatbot, QR code, GitHub, and resume.' },
+      { keys:['contact','email','reach'], answer:'Use the contact form on this page to send a message.' },
+      { keys:['github'], answer:'My GitHub repository link is: ' + GITHUB_URL },
+      { keys:['resume','cv'], answer:'Open the Resume page to view the web version of my resume.' }
+    ];
+    function pickAnswer(text){
+      const t = (text || '').toLowerCase().trim();
+      for (const item of faq) if (item.keys.some((k) => t.includes(k))) return item.answer;
+      return 'Try asking about skills, projects, resume, GitHub, or contact.';
+    }
+    function addMessage(role, text){
+      const chat = document.getElementById('chatWindow');
+      if (!chat) return;
+      const row = document.createElement('div');
+      row.className = 'msg ' + role;
+      const bubble = document.createElement('div');
+      bubble.className = 'bubble';
+      bubble.textContent = text;
+      row.appendChild(bubble);
+      chat.appendChild(row);
+      chat.scrollTop = chat.scrollHeight;
+    }
+    function wireChatbot(){
+      const input = document.getElementById('chatInput');
+      const send = document.getElementById('sendChatBtn');
+      if (!input || !send) return;
+      const sendMessage = () => {
+        const text = input.value.trim();
+        if (!text) return;
+        addMessage('user', text);
+        input.value = '';
+        setTimeout(() => addMessage('bot', pickAnswer(text)), 150);
+      };
+      send.addEventListener('click', sendMessage);
+      input.addEventListener('keydown', (e) => { if (e.key === 'Enter') sendMessage(); });
+      document.querySelectorAll('.chip[data-q]').forEach((btn) => btn.addEventListener('click', () => { input.value = btn.getAttribute('data-q') || ''; sendMessage(); }));
+      addMessage('bot', 'Hi! Ask me about skills, projects, resume, GitHub, or contact.');
+    }
+    document.addEventListener('DOMContentLoaded', () => { hydrateCommon(); wireContactForm(); wireChatbot(); });
+  </script>
+</body>
+</html>
